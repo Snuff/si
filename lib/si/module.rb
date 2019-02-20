@@ -21,7 +21,7 @@ module SI
           val = val.to_i if exp == 0 && num.is_a?(Fixnum)
           val = val.to_s.ljust(length + 1, '0') if val.is_a?(Float)
 
-          return "#{minus}#{val}#{PREFIXES[exp]}"
+          return "#{minus}#{val} #{PREFIXES[exp]}"
         end
       end
 
